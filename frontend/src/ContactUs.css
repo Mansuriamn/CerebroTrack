@@ -1,0 +1,124 @@
+.owner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  background-color: var(--white);
+  width: 750px;
+  height: 690px;
+  box-shadow: 2px 12px 12px 18px rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 1rem;
+}
+
+.owner .owner-text {
+  text-align: center;
+}
+
+.owner-text h2 {
+  color: var(--navbar-color);
+  font-size: 1.8rem;
+}
+
+.owner-text p {
+  color: var(--navbar-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.subscribe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+ .form_con {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 84px;
+    align-items: center;
+    position: relative;
+}
+#in{
+          width: 550px;
+        height: 40px;
+        border-radius: 3px;
+        margin-top: 10px;
+}
+#message{
+         width: 550px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#search{
+  width: 150px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  background-color: var(--button);
+  color: var(--white);
+  box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+#search:hover{
+  background-color: var(--icon-bg);
+  color: var(--navbar-color);
+}
+
+@media (max-width: 480px) {
+      .owner {
+        width: 300px;
+        height: 795px;
+    }
+  #in{
+    width: 250px;
+  }
+  #message{
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+  .owner {
+    width: 400px;
+    height: 550px;
+  }
+  #in{
+    width: 300px;
+  }
+  #message{
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .owner {
+    width: 750px;
+    height: 790px;
+  }
+  #in{
+    width: 550px;
+  }
+  #message{
+    width: 550px;
+  }
+}

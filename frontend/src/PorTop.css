@@ -1,0 +1,80 @@
+
+:root {
+  --navbar-color: #142130;
+  --white: #efefef;
+  --button: #3d768a;
+  --icon-bg: #dee8fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #efefef;
+  height: 100vh;
+}
+
+
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+   color: #142130;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 0.7s;
+}
+.home-content h1{
+         font-size: 45px;
+    margin-bottom: 3rem;
+    color: #142130;
+}
+.home-content p{
+         color: #142130;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.port_btnbox{
+       width: 150px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+  margin: 0 0.4rem;
+  font-size: 1rem;
+}
+.port_btnbox{
+          background-color: var(--icon-bg);
+  color: var(--navbar-color);
+  box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.port_btnbox:hover{
+       background: var(--button);
+  color: var(--white);
+}
