@@ -11,11 +11,8 @@ button {
 }
 
 body {
-  /* display: flex;
-  justify-content: center; */
   align-items: center;
   min-height: 100vh;
-  /* background: linear-gradient(135deg, #5A6C57, #DCE4C9, #B6A28E); */
   background-size: 300% 300%;
   animation: gradient-bg 8s infinite;
 }
@@ -35,7 +32,7 @@ body {
 
 /* Main Container */
 .main-container {
-  width: 100%;
+  width: 96%;
   max-width: 400px;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.15);
@@ -43,30 +40,30 @@ body {
   padding: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   position: relative;
-  left: 35%;
-    top: 8rem;
 }
 
 /* Laptop */
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media only screen and (min-width: 1025px)  {
   .main-container {
     left: 35%;
-    top: 25rem;
+    top: 10rem;
   }
 }
 
 /* Ipad */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
   .main-container {
-    left: 4%;
+    left: 30%;
+    top: 10rem;
   }
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media only screen and (max-width: 480px)  {
   .main-container {
-   left: 3%;
-        top: 11rem;
+    left: 2%;
+    top: 11rem;
+    padding: 5px;
   }
 }
 
@@ -166,7 +163,7 @@ p {
   text-decoration: underline;
 }
 
-
-#logprop{
+#logprop {
   text-decoration: none;
 }
+
