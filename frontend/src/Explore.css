@@ -22,19 +22,21 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .explore .img-exp img {
   border-radius: 32% 68% 49% 51% / 28% 53% 47% 72%;
-  -webkit-border-radius: 32% 68% 49% 51% / 28% 53% 47% 72%;
-  -moz-border-radius: 32% 68% 49% 51% / 28% 53% 47% 72%;
-  -ms-border-radius: 32% 68% 49% 51% / 28% 53% 47% 72%;
-  -o-border-radius: 32% 68% 49% 51% / 28% 53% 47% 72%;
+  width: 100%;
+  max-width: 400px;
 }
 
 .explore .content-exp {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
 }
+
 .explore .content-exp h2 {
   color: var(--navbar-color);
   font-size: 1.8rem;
@@ -48,15 +50,12 @@ body {
 }
 
 .explore .content-exp .btn-exp {
-  width: 150px;
+  width: 100%;
+  max-width: 150px;
   height: 45px;
   border: none;
   outline: none;
   border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   cursor: pointer;
   margin-top: 2.5rem;
   font-size: 1rem;
@@ -64,10 +63,6 @@ body {
   color: var(--white);
   box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
 }
 
 .explore .content-exp .btn-exp:hover {
@@ -79,21 +74,11 @@ body {
   .explore {
     flex-direction: column;
   }
-  .explore .img-exp img {
-    width: 100%;
-  }
-  .explore .content-exp {
-    width: 100%;
-    text-align: center;
-  }
   .explore .content-exp h2 {
     font-size: 1.5rem;
   }
   .explore .content-exp p {
     font-size: 0.8rem;
-  }
-  .explore .content-exp .btn-exp {
-    width: 100%;
   }
 }
 
@@ -101,21 +86,11 @@ body {
   .explore {
     flex-direction: column;
   }
-  .explore .img-exp img {
-    width: 100%;
-  }
-  .explore .content-exp {
-    width: 100%;
-    text-align: center;
-  }
   .explore .content-exp h2 {
     font-size: 1.8rem;
   }
   .explore .content-exp p {
     font-size: 1rem;
-  }
-  .explore .content-exp .btn-exp {
-    width: 100%;
   }
 }
 
@@ -123,11 +98,7 @@ body {
   .explore {
     flex-direction: row;
   }
-  .explore .img-exp img {
-    width: 100%;
-  }
   .explore .content-exp {
-    width: 50%;
     text-align: left;
   }
   .explore .content-exp h2 {
@@ -136,7 +107,5 @@ body {
   .explore .content-exp p {
     font-size: 1.1rem;
   }
-  .explore .content-exp .btn-exp {
-    width: 150px;
-  }
 }
+

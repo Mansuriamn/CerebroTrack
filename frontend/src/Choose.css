@@ -28,7 +28,9 @@ body {
 }
 
 .main2 .main-card {
-  
+  display: flex;
+ 
+  align-items: center;
   place-items: center;
 }
 
@@ -42,81 +44,64 @@ body {
   border: 1px solid var(--button);
   box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
 }
 
 .main2 .main-card .cardland .icon-img {
   background-color: #e8e8e8;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   width: 75px;
   height: 75px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.icon-img img{
- width: 189px;
-    border-radius: 44%;
-}
 
-.main2 .main-card .cardland .icon-img img {
-  padding: 1.25rem;
+.icon-img img {
+  width: 189px;
+  margin-top: 45px;
+  border-radius: 44%;
 }
 
 .main2 .main-card .cardland h3 {
-    margin-top: 4rem;
-    color: var(--navbar-color);
-    font-size: 1.4rem;
-    margin-bottom: 35px;
+  margin-top: 4rem;
+  color: var(--navbar-color);
+  font-size: 1.4rem;
+  margin-bottom: 35px;
 }
 
-.main2 .main-card .cardlan p {
+.main2 .main-card .cardland p {
   margin-top: 1.5rem;
   color: var(--navbar-color);
   font-weight: 300;
   font-size: 0.85rem;
 }
 
-@media (max-width: 480px){
-.main2 .main-card {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.main2 .main-card .cardland{
-  width: 295px;
-}
-.main2 h1{
-  font-size: 2rem;
-}
+@media (max-width: 480px) {
+  .main2 h1 {
+    font-size: 2rem;
+  }
+  .main2 .main-card .cardland {
+    width: 295px;
+  }
+  .cardland{
+    margin-left: 45px;
+  }
 }
 
-@media (max-width: 767px){
-.main2 .main-card {
-    display: flex;
-    flex-wrap: wrap;  
-}
-
+@media (max-width: 767px) {
+  .main2 .main-card {
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main2 .main-card {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .main2 .main-card .cardland{
+  .main2 .main-card .cardland {
     width: 45%;
   }
 }
@@ -125,9 +110,15 @@ body {
   .main2 .main-card {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 40px;
     justify-content: space-around;
+    /* Show 3 card in 1 row */
+    flex-basis: calc(100% / 3);
   }
-  .main2 .main-card .cardland{
+  .main2 .main-card .cardland {
     width: 26%;
+    
   }
-} 
+  
+}
+
