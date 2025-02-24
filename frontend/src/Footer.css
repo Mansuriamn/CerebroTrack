@@ -49,11 +49,12 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
- .footer-section h3,.copyright-section,.footer-section h3,.bxs-envelope:before,.footer-section h3 {
+ #lets,.bxs-envelope:before,.bxs-phone:before{
   display: none;
   width: 0px;
 
  }
+ 
 .footer-section p {
     color: #dee8fa;
     margin-top: 35px;
