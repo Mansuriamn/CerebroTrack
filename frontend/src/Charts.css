@@ -233,13 +233,7 @@ body {
         margin-bottom: 20px;
 }
 .cha_data {
-    display: flex;
-    justify-content: unset;
-    flex-wrap: wrap;
-    margin-top: 35px;
-    flex-basis: calc(50% - 15px);
-    width: 500px;
-   gap: 3px;
+    width: 98%;
 }
 h2 {
     margin-bottom: 10px;
