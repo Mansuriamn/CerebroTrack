@@ -12,10 +12,6 @@ export default function Footer() {
 
     <div className="footer-content">
       <div className="footer-section">
-        <h3 id='lets'>Let's Connect</h3>
-      
-      </div>
-      <div className="footer-section">
         <h3  id='lets'>Quick Links</h3>
         <ul className="footer-links">
           <li><a href="#">Home</a></li>
