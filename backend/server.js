@@ -28,7 +28,7 @@ app.get('*', (req, res) => {
 
 // Increase server timeout settings
 app.server = app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running at ${PORT}`);
 });
 
 
